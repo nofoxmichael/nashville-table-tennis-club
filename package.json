@@ -5,6 +5,7 @@
   "author": "Michael Smith <michaelsmith@nofoxmedia.com>",
   "dependencies": {
     "ajv": "^6.9.2",
+    "core-js": "^2.6.5",
     "fullcalendar": "^3.9.0",
     "fullcalendar-reactwrapper": "^1.0.7",
     "gatsby": "^2.0.0",
