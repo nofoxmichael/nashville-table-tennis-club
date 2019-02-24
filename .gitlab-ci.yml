@@ -2,7 +2,7 @@ image: node
 
 before_script:
   - npm install
-  - gatsby build
+  - node_modules/.bin/gatsby build
 
 deploy:
   stage: deploy
