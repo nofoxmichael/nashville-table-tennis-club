@@ -9,3 +9,12 @@ deploy:
     - node_modules/.bin/gatsby build
     - cp CNAME public/
     - node_modules/.bin/surge public/
+  only:
+    - master
+
+test_staging:
+  stage: deploy
+  script:
+    - node_modules/.bin/gatsby build
+    - cp DEV_CNAME public/
+    - node_modules/.bin/surge public/
