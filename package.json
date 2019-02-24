@@ -39,5 +39,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "resolutions": {
+    "eslint-plugin-graphql": "^0.13.0",
+    "express-graphql": "^0.13.0",
+    "graphql-tools": "^0.13.0"
   }
 }
