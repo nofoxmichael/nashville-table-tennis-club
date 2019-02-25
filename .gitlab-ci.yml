@@ -5,10 +5,8 @@ before_script:
 
 deploy_staging:
   stage: deploy
-  environment:
-    - name: staging
-    - url: nttc.surge.sh
   script:
+    - echo "starting deploy staging"
     - node_modules/.bin/gatsby build
     - cp DEV_CNAME public/CNAME
     - node_modules/.bin/surge public/
@@ -20,6 +18,7 @@ deploy_staging:
 deploy:
   stage: deploy
   script:
+    - echo "deploying to live site"
     - node_modules/.bin/gatsby build
     - cp CNAME public/
     - node_modules/.bin/surge public/
