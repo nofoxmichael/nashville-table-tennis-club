@@ -8,9 +8,9 @@ deploy_staging:
   script:
     - echo "starting deploy staging"
     - node_modules/.bin/gatsby build
-    - node_modules/.bin/surge public nttc.surge.sh
-  except:
-    - master
+    - node_modules/.bin/surge public/ nttc.surge.sh
+  only:
+    - dev
 
 deploy:
   stage: deploy
