@@ -9,9 +9,7 @@ deploy_staging:
     - echo "starting deploy staging"
     - node_modules/.bin/gatsby build
     - cp DEV_CNAME public/CNAME
-    - node_modules/.bin/surge public/
-  only:
-    - branches
+    - node_modules/.bin/surge public nttc.surge.sh
   except:
     - master
 
