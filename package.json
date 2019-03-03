@@ -34,7 +34,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@material-ui/core": "^3.9.2",
+    "@material-ui/icons": "^3.0.2",
+    "material-icons-react": "^1.0.4",
     "prettier": "^1.14.2",
+    "react-tooltip": "^3.9.2",
     "surge": "^0.20.1"
   },
   "repository": {
