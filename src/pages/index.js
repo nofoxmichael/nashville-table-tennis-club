@@ -50,8 +50,7 @@ class Homepage extends React.Component {
                             <header className="major">
                                 <h2>Upcoming Schedule Changes</h2>
                             </header>
-                            <p>Thursday February 21st, 2019 @ Academy Park - <span className="cancelled">Cancelled</span></p>
-                            <p>Friday February 22nd, 2019 @ Nolensville - <span className="cancelled">Cancelled</span></p>
+                            <p>Friday March 8th, 2019 @ Nolensville Rec Center - <span className="cancelled">Cancelled</span></p>
                         </div>
                     </div>
                 </section>
