@@ -7,7 +7,7 @@ class Header extends React.Component {
         return (
             <section id="header">
                 <div className="inner">
-                    <span><img className="banner" src={banner} alt=""/></span>
+                    <span><img className="banner" src={banner} alt="" /></span>
                 </div>
             </section>
         )

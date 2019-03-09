@@ -1,20 +1,23 @@
-import React from "react";
-import Helmet from "react-helmet";
+import React from "react"
+import Helmet from "react-helmet"
 
-import Layout from '../components/layout';
+import Layout from "../components/layout"
 
-import ReactTooltip from 'react-tooltip';
-import NavigationIcon from '@material-ui/icons/Navigation';
-import Button from '@material-ui/core/Button';
-import EmailPage from './email';
+import ReactTooltip from "react-tooltip"
+import Contact from "../components/Contact"
+import Location from "../components/Location"
 
-import roger_dickson from '../assets/images/roger_dickson.jpg'
-import pic03 from '../assets/images/pic03.jpg'
-import brian_rassavong from '../assets/images/brian_rassavong.jpg'
-import michael_smith from '../assets/images/michael_smith.jpg'
-import ball_and_racket from '../assets/images/ball_and_racket.jpg'
+import roger_dickson from "../assets/images/roger_dickson.jpg"
+import pic03 from "../assets/images/pic03.jpg"
+import brian_rassavong from "../assets/images/brian_rassavong.jpg"
+import michael_smith from "../assets/images/michael_smith.jpg"
+import ball_and_racket from "../assets/images/ball_and_racket.jpg"
 
 class Homepage extends React.Component {
+    handleClick(url) {
+        window.open(url, "_blank");
+    }
+
     render() {
         const siteTitle = "Nashville Table Tennis Club";
 
@@ -29,10 +32,12 @@ class Homepage extends React.Component {
                                 <h2>Welcome to NTTC!</h2>
                             </header>
                             <p>
-                                We are Nashville's premiere table tennis organization.
-                                We meet 3 times a week throughout Willamson county. We welcome all ages and skill levels.
-                                Balls are provided by the club, and we do have paddles for those visiting that do not have
-                                their own equipment. It costs only $3 per session to play, cash only, no membership required. <br />
+                                We are Nashville's premiere table tennis organization, and have been for 30 years.
+                                In partnership with Williamson County Parks and Recreation, we meet 3 times a week for 3 hours per session.
+                                Tournament-grade Butterfly Europa 25 tables and nets, and Nittaku 40+ balls are provided by the club.
+                                For those that may be new to the sport or visiting, the club also has spare paddles at each facility for players to use.
+                                It costs only $3 per session to play, cash only, no membership required.
+                                All ages and skill levels are welcomed. <br /> <br />
                                 We hope to see you on the courts!
                             </p>
                         </div>
@@ -48,24 +53,9 @@ class Homepage extends React.Component {
                             <header className="major">
                                 <h2>Schedule</h2>
                             </header>
-                            <div class="location">
-                                <Button  class="nav" href="https://goo.gl/maps/V6uRMi4NWeK2" data-tip="112 Everbright Ave, Franklin, TN 37064">
-                                        <NavigationIcon></NavigationIcon>
-                                </Button>
-                                <p>Thursday: 7:00 PM - 9:00 PM at Academy Park</p>
-                            </div>
-                            <div class="location">
-                                <Button  class="nav" href="https://goo.gl/maps/enQ7WXaSFXK2" data-tip="112 Everbright Ave, Franklin, TN 37064">
-                                        <NavigationIcon></NavigationIcon>
-                                </Button>
-                                <p>Friday: 5:30 PM - 8:30 PM at Nolesnville Recreation Center</p>
-                            </div>
-                            <div class="location">
-                                <Button  class="nav" href="https://goo.gl/maps/yr8K7kjkjnA2" data-tip="112 Everbright Ave, Franklin, TN 37064">
-                                    <NavigationIcon></NavigationIcon>
-                                </Button>
-                                <p>Sunday: 3:00 PM - 6:00 PM at Brentwood Indoor Sports Complex</p>
-                            </div>
+                            <Location url="https://goo.gl/maps/V6uRMi4NWeK2" address="112 Everbright Ave Franklin, TN 37064" time="Thursday: 7:00 PM - 9:00 PM" venue="Academy Park"></Location>
+                            <Location url="https://goo.gl/maps/V6uRMi4NWeK2" address="112 Everbright Ave Franklin, TN 37064" time="Friday: 5:30 PM - 8:30 PM" venue="Nolensville Rec Center"></Location>
+                            <Location url="https://goo.gl/maps/V6uRMi4NWeK2" address="112 Everbright Ave Franklin, TN 37064" time="Sunday: 3:00 PM - 6:00 PM" venue="Indoor Sports Complex"></Location>
                         </div>
                         <div className="col-6">
                             <header className="major">
@@ -124,7 +114,8 @@ class Homepage extends React.Component {
                         <header className="major">
                             <h2>Contact Us</h2>
                         </header>
-                        <EmailPage></EmailPage>
+                        <p>If you have some questions that aren't answered on our site, please fill out the form below, and we will get back with you as soon as possible.</p>
+                        <Contact></Contact>
                     </div>
                 </section>
                 <ReactTooltip />

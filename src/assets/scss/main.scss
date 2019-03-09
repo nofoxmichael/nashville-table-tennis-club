@@ -77,12 +77,6 @@
 	margin-right: 2px;
 }
 
-.nav {
-	margin-left: -1em;
-	margin-right: 0.5em;
-	color: #B52F27;
-}
-
 	body {
 		background: _palette(bg);
 
@@ -380,7 +374,7 @@
 	}
 
 	input[type="checkbox"],
-	input[type="radio"], {
+	input[type="radio"] {
 		@include vendor('appearance', 'none');
 		display: block;
 		float: left;
@@ -988,7 +982,10 @@
 		&.style2 {
 			background-color: #1D3F63;
 			color: white;
-			// @include dark(#333);
+			h2 {
+				color: white;
+			}
+			// @include dark(#333);g
 			// background-attachment:	fixed,							fixed;
 			// background-image:		url('../images/overlay1.png'),		url('../images/header.jpg');
 			// background-size:		auto,							cover;

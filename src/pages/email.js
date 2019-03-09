@@ -1,13 +1,11 @@
 import React from 'react'
 import Layout from '../components/layout'
+import Contact from "../components/Contact"
 
 const EmailPage = () => (
-      <form class="fieldset" action="https://formspree.io/nashvillettc@gmail.com" method="POST">
-          <input class="email-form" type="text" name="name" placeholder="name"/>
-          <input class="email-form" type="email" name="_replyto" placeholder="email"/>
-          <textarea class="email-text" name="message" placeholder="message"></textarea>
-          <input type="submit" value="Send"/>
-      </form>
+    <Layout>
+        <Contact></Contact>
+    </Layout>
 )
 
 export default EmailPage
