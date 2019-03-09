@@ -1,7 +1,7 @@
 {
   "name": "nashville-table-tennis-club",
   "description": "Nashville Table Tennis Club main website",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "author": "Michael Smith <michaelsmith@nofoxmedia.com>",
   "dependencies": {
     "ajv": "^6.9.2",
