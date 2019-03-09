@@ -3,9 +3,21 @@ image: node
 before_script:
   - npm install
 
+deploy_staging:
+  stage: deploy
+  script:
+    - echo "starting deploy staging"
+    - node_modules/.bin/gatsby build
+    - node_modules/.bin/surge public/ nttc.surge.sh
+  only:
+    - dev
+
 deploy:
   stage: deploy
   script:
+    - echo "deploying to live site"
     - node_modules/.bin/gatsby build
     - cp CNAME public/
     - node_modules/.bin/surge public/
+  only:
+    - master
