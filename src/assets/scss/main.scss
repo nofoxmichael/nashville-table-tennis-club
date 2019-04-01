@@ -32,10 +32,43 @@
 	color: #B52F27;
 }
 
-.banner {
-	width: auto;
-	max-width: 45%;
-	height: auto;
+@media screen and (min-width: 1025px) {
+	.banner {
+		width: auto;
+		max-width: 45%;
+		height: auto;
+	}
+
+	.location > p {
+		display: block;
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.banner {
+		width: auto;
+		max-width: 90%;
+		height: auto;
+	}
+
+	.location > p {
+		display: inline-block;
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.banner {
+		width: auto;
+		max-width: 90%;
+		height: auto;
+	}
+
+	.location > p {
+		display: block;
+		text-align: center;
+	}
 }
 
 .fieldset {
@@ -47,7 +80,6 @@
 }
 
 .email-form {
-	margin: auto;
 	max-width: 100%;
 	height: auto;
 	margin-bottom: 1em;
@@ -61,12 +93,9 @@
 }
 
 .admin-image {
-	width: 250px;
-	height: 160px;
-}
-
-.location > p {
-	display: inline-block;
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
 .directions-icon {
