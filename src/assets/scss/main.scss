@@ -27,10 +27,6 @@
 ));
 
 /* Basic */
-.cancelled {
-	font-weight: bold;
-	color: #B52F27;
-}
 
 @media screen and (min-width: 1025px) {
 	.banner {
@@ -42,6 +38,12 @@
 	.location > p {
 		display: block;
 		text-align: center;
+	}
+
+	.cancelled {
+		display: inline-block;
+		font-weight: bold;
+		color: #B52F27;
 	}
 }
 
@@ -56,6 +58,12 @@
 		display: inline-block;
 		text-align: left;
 	}
+
+	.cancelled {
+		display: inline-block;
+		font-weight: bold;
+		color: #B52F27;
+	}
 }
 
 @media screen and (max-width: 1023px) {
@@ -68,6 +76,12 @@
 	.location > p {
 		display: block;
 		text-align: center;
+	}
+
+	.cancelled {
+		display: block;
+		font-weight: bold;
+		color: #B52F27;
 	}
 }
 

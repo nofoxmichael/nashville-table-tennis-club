@@ -62,6 +62,10 @@ class Homepage extends React.Component {
                                 <h2>Upcoming Schedule Changes</h2>
                             </header>
                             <p>Sunday, April 7th at Indoor Sports Complex is <span className="cancelled">CANCELLED</span></p>
+                            <p>Friday, April 19th at Nolensville Rec Center is <span className="cancelled">CANCELLED</span></p>
+                            <p>Sunday, April 21st at Indoor Sports Complex is <span className="cancelled">CANCELLED</span></p>
+                            <p>Friday, April 26th at Nolensville Rec Center is <span className="cancelled">DELAYED - 6PM Start</span></p>
+                            <p>Friday, May 17th at Nolensville Rec Center is <span className="cancelled">DELAYED - 6PM Start</span></p>
                         </div>
                     </div>
                 </section>
