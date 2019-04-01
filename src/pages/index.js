@@ -9,7 +9,7 @@ import Location from "../components/Location"
 
 import roger_dickson from "../assets/images/roger_dickson.jpg"
 import pic03 from "../assets/images/pic03.jpg"
-import brian_rassavong from "../assets/images/brian_rassavong.jpg"
+import brian_rassavong from "../assets/images/brian_rassavong.png"
 import michael_smith from "../assets/images/michael_smith.jpg"
 import ball_and_racket from "../assets/images/ball_and_racket.jpg"
 
@@ -61,7 +61,7 @@ class Homepage extends React.Component {
                             <header className="major">
                                 <h2>Upcoming Schedule Changes</h2>
                             </header>
-                            <p>No upcoming schedule changes!</p>
+                            <p>Sunday, April 7th at Indoor Sports Complex is <span className="cancelled">CANCELLED</span></p>
                         </div>
                     </div>
                 </section>
@@ -75,22 +75,22 @@ class Homepage extends React.Component {
                             <p>These are the people responsible for making our club possible.</p>
                         </div>
                         <div className="col-3">
-                            <span className="image fit admin-image"><img class="admin-image" src={brian_rassavong} alt="" /></span>
+                            <span className="image fit admin-image"><img className="admin-image" src={brian_rassavong} alt="" /></span>
                             <h3>President</h3>
                             <p><strong>Brian Rassavong</strong></p>
                         </div>
                         <div className="col-3">
-                            <span className="image fit admin-image"><img class="admin-image" src={roger_dickson} alt="" /></span>
+                            <span className="image fit admin-image"><img className="admin-image" src={roger_dickson} alt="" /></span>
                             <h3>Vice President</h3>
                             <p><strong>Roger Dickson</strong></p>
                         </div>
                         <div className="col-3">
-                            <span className="image fit"><img class="admin-image" src={michael_smith} alt="" /></span>
+                            <span className="image fit"><img className="admin-image" src={michael_smith} alt="" /></span>
                             <h3>IT and Secretary</h3>
                             <p><strong>Michael Smith</strong></p>
                         </div>
                         <div className="col-3">
-                            <span className="image fit admin-image"><img class="admin-image" src={pic03} alt="" /></span>
+                            <span className="image fit admin-image"><img className="admin-image" src={pic03} alt="" /></span>
                             <h3>WCPR Coordinator</h3>
                             <p><strong>Bob Gammon</strong></p>
                         </div>
