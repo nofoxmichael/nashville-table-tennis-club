@@ -1,5 +1,5 @@
 import React from "react";
-import NavigationIcon from '@material-ui/icons/Navigation';
+import NavigationIcon from '@material-ui/icons/Directions';
 import Button from '@material-ui/core/Button';
 
 import locationStyles from '../assets/css/location.module.css';
@@ -12,9 +12,10 @@ class Location extends React.Component {
                     <NavigationIcon className={locationStyles.nav} color=""></NavigationIcon>
                 </Button>
                 <p>{this.props.time} at {this.props.venue}</p>
+                <p className="address">{this.props.address}</p>
             </div>
         )
     }
 }
 
-export default Location
+export default Location;

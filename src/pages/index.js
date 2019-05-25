@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 
 import ReactTooltip from "react-tooltip"
 import Contact from "../components/Contact"
-import Location from "../components/Location"
+import UpcomingScheduleChanges from '../components/UpcomingScheduleChanges';
 
 import roger_dickson from "../assets/images/roger_dickson.jpg"
 import pic03 from "../assets/images/pic03.jpg"
@@ -47,28 +47,7 @@ class Homepage extends React.Component {
                     </div>
                 </section>
 
-                <section id="two" className="main style2">
-                    <div className="grid-wrapper">
-                        <div className="col-6">
-                            <header className="major">
-                                <h2>Schedule</h2>
-                            </header>
-                            <Location url="https://goo.gl/maps/V6uRMi4NWeK2" address="112 Everbright Ave Franklin, TN 37064" time="Thursday: 7:00 PM - 9:00 PM" venue="Academy Park"></Location>
-                            <Location url="https://goo.gl/maps/3LuJE47J1ty" address="7250 Nolensville Rd, Nolensville, TN 37135" time="Friday: 5:30 PM - 8:30 PM" venue="Nolensville Rec Center"></Location>
-                            <Location url="https://goo.gl/maps/9gQqLFvfpxD2" address="920 Heritage Way, Brentwood, TN 37027" time="Sunday: 3:00 PM - 6:00 PM" venue="Indoor Sports Complex"></Location>
-                        </div>
-                        <div className="col-6">
-                            <header className="major">
-                                <h2>Upcoming Schedule Changes</h2>
-                            </header>
-                            <p>Sunday, April 7th at Indoor Sports Complex is <span className="cancelled">CANCELLED</span></p>
-                            <p>Friday, April 19th at Nolensville Rec Center is <span className="cancelled">CANCELLED</span></p>
-                            <p>Sunday, April 21st at Indoor Sports Complex is <span className="cancelled">CANCELLED</span></p>
-                            <p>Friday, April 26th at Nolensville Rec Center is <span className="cancelled">DELAYED - 6PM Start</span></p>
-                            <p>Friday, May 17th at Nolensville Rec Center is <span className="cancelled">DELAYED - 6PM Start</span></p>
-                        </div>
-                    </div>
-                </section>
+                <UpcomingScheduleChanges></UpcomingScheduleChanges>
 
                 <section id="three" className="main style1 special">
                     <div className="grid-wrapper">
