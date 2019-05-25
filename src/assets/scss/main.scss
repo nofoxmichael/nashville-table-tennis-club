@@ -36,9 +36,15 @@
 	}
 
 	.location > p {
-		display: block;
-		text-align: center;
+		display: inline-block;
+		text-align: left;
+		margin-bottom: 2px;
+	}
+
+	.location > .address {
 		margin-bottom: 25px;
+		margin-left: 90px;
+		font-size: 0.75em;
 	}
 
 	.cancelled {
@@ -48,7 +54,7 @@
 	}
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1025px) {
 	.banner {
 		width: auto;
 		max-width: 70%;

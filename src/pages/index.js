@@ -5,7 +5,7 @@ import Layout from "../components/layout";
 
 import ReactTooltip from "react-tooltip";
 import ContactForm from "../components/ContactForm";
-import UpcomingScheduleChanges from '../components/UpcomingScheduleChanges';
+import Schedule from '../components/Schedule';
 import Welcome from "../components/Welcome";
 import Administrators from "../components/Administrators";
 import MailingList from "../components/MailingList";
@@ -24,7 +24,7 @@ class Homepage extends React.Component {
 
                 <Welcome></Welcome>
 
-                <UpcomingScheduleChanges></UpcomingScheduleChanges>
+                <Schedule></Schedule>
 
                 <Administrators></Administrators>
 
