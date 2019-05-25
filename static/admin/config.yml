@@ -1,0 +1,14 @@
+backend:
+  name: git-gateway
+  branch: master #branch to update (optional; defaults to master)
+publish_mode: editorial_workflow #allows for a drafting, reviewing, and approving process for changes
+media_folder: "src/assets/images/uploads"
+public_folder: "/images"
+
+#collections
+collections:
+  - name: "Cancellations"
+    label: "Upcoming Schedule Changes"
+    folder: "/static/dates"
+    fields:
+      - {label: "Cancellation", name: "cancellation", widget: "Date"}
