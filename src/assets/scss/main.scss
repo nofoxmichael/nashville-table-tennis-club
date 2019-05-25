@@ -38,6 +38,7 @@
 	.location > p {
 		display: block;
 		text-align: center;
+		margin-bottom: 25px;
 	}
 
 	.cancelled {
@@ -57,6 +58,13 @@
 	.location > p {
 		display: inline-block;
 		text-align: left;
+		margin-bottom: 2px;
+	}
+
+	.location > .address {
+		margin-bottom: 25px;
+		margin-left: 90px;
+		font-size: 0.75em;
 	}
 
 	.cancelled {
@@ -75,6 +83,13 @@
 
 	.location > p {
 		display: block;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+
+	.location > .address {
+		margin-bottom: 20px;
+		font-size: 0.85em;
 		text-align: center;
 	}
 
