@@ -20,7 +20,9 @@ class Homepage extends React.Component {
 
         return (
             <Layout>
-                <Helmet title={siteTitle} />
+                <Helmet title={siteTitle}>
+                    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+                </Helmet>
 
                 <Welcome></Welcome>
 
@@ -31,8 +33,20 @@ class Homepage extends React.Component {
                 <MailingList></MailingList>
 
                 <ContactForm></ContactForm>
-                
+
                 <ReactTooltip />
+
+                <script>
+                    {`if (window.netlifyIdentity) {
+                        window.netlifyIdentity.on("init", user => {
+                            if (!user) {
+                                window.netlifyIdentity.on("login", () => {
+                                    document.location.href = "/admin/";
+                                });
+                            }
+                        });
+                    }`}
+                </script>
             </Layout>
         );
     }
