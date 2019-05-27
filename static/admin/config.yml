@@ -1,27 +1,24 @@
 backend:
-  name: git-gateway
-  branch: master #branch to update (optional; defaults to master)
+  name: test-repo
+  # branch: master #branch to update (optional; defaults to master)
 publish_mode: editorial_workflow #allows for a drafting, reviewing, and approving process for changes
 media_folder: "src/assets/images/uploads"
 public_folder: "/images"
 
 #collections
 collections:
-  - label: "Cancellations"
-    name: "cancellations"
-    create: true
-    files: 
-      - label: "Upcoming Schedule Changes"
-        name: "upcoming schedule changes"
-        file: "/src/static/content/cancellations.yml"
-        identifier_field: date
+  - label: "Upcoming Schedule Changes"
+    name: "upcoming schedule changes"
+    files:
+      - label: "Cancellations"
+        name: "cancellations"
+        file: "static/content/cancellations.yml"
         fields:
-          - label: "Cancellation"
-            name: "cancellation"
-            widget: "list"
-            create: true
-            fields:
-            - {label: "Cancellation", name: "cancellation", widget: "hidden"}
+        - label: "Cancellation"
+          name: "cancellation"
+          create: true
+          widget: "list"
+          fields:
             - {label: "Date", name: "date", widget: "date"}
             - {label: "Location", name: "location", widget: "select", options: ["Nolensville", "Franklin", "Brentwood"]}
             - {label: "Type", name: "type", widget: "select", options: ["Cancelled", "Delayed", "Relocated"]}
