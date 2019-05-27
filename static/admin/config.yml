@@ -9,6 +9,7 @@ public_folder: "/images"
 collections:
   - label: "Cancellations"
     name: "cancellations"
+    create: true
     files: 
       - label: "Upcoming Schedule Changes"
         name: "upcoming schedule changes"
