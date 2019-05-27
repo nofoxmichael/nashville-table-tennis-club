@@ -16,7 +16,11 @@ collections:
         create: true
         identifier_field: date
         fields:
-          - {label: "Cancellation", name: "cancellation", widget: "hidden"}
-          - {label: "Date", name: "date", widget: "date"}
-          - {label: "Location", name: "location", widget: "select", options: ["Nolensville", "Franklin", "Brentwood"]}
-          - {label: "Type", name: "type", widget: "select", options: ["Cancelled", "Delayed", "Relocated"]}
+          - label: "Cancellation"
+            name: "cancellation"
+            widget: "list"
+            fields:
+            - {label: "Cancellation", name: "cancellation", widget: "hidden"}
+            - {label: "Date", name: "date", widget: "date"}
+            - {label: "Location", name: "location", widget: "select", options: ["Nolensville", "Franklin", "Brentwood"]}
+            - {label: "Type", name: "type", widget: "select", options: ["Cancelled", "Delayed", "Relocated"]}
