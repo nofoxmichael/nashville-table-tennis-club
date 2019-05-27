@@ -14,12 +14,12 @@ collections:
       - label: "Upcoming Schedule Changes"
         name: "upcoming schedule changes"
         file: "/src/static/content/cancellations.yml"
-        create: true
         identifier_field: date
         fields:
           - label: "Cancellation"
             name: "cancellation"
             widget: "list"
+            create: true
             fields:
             - {label: "Cancellation", name: "cancellation", widget: "hidden"}
             - {label: "Date", name: "date", widget: "date"}
