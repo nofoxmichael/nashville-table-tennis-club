@@ -12,10 +12,10 @@ collections:
     files:
       - label: "Cancellations"
         name: "cancellations"
-        file: "static/content/cancellations.yml"
+        file: "static/content/cancellations.md"
         fields:
-        - label: "Cancellation"
-          name: "cancellation"
+        - label: "Cancellations"
+          name: "cancellations"
           create: true
           widget: "list"
           fields:
