@@ -7,7 +7,7 @@ class Cancellations extends React.Component {
         return (
             <div>
                 {this.props.cancellations.map(cancellation => (
-                    <Cancellation cancellation={cancellation}></Cancellation>
+                    <Cancellation key={cancellation.date} cancellation={cancellation}></Cancellation>
                 ))}
             </div>
         )

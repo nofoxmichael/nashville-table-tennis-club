@@ -9,7 +9,7 @@ class Location extends React.Component {
         return (
             <div className="location">
                 <Button target="_blank" rel="noopener noreferror" href={this.props.url} data-tip={this.props.address}>
-                    <NavigationIcon className={locationStyles.nav} color=""></NavigationIcon>
+                    <NavigationIcon className={locationStyles.nav}></NavigationIcon>
                 </Button>
                 <p>{this.props.time} at {this.props.venue}</p>
                 <p className="address">{this.props.address}</p>
