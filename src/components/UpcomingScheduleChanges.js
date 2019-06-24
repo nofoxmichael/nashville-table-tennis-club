@@ -6,16 +6,14 @@ import Cancellations from './Cancellations';
 
 class UpcomingScheduleChanges extends React.Component {
     render() {
-        const { data } = this.props;
-        const { edges: cancellations } = data.allMarkdownRemark;
-
+        console.log(this.props.cancellations)
         return (
             <div className="col-6">
                 <header className="major">
                     <h2>Upcoming Schedule Changes</h2>
                 </header>
                 {this.props.cancellations ? (
-                    <Cancellations cancellations={cancellations}></Cancellations>
+                    <Cancellations cancellations={this.props.cancellations}></Cancellations>
                 ) : (
                     <p>No upcoming cancellations!</p>
                 )}
@@ -24,26 +22,25 @@ class UpcomingScheduleChanges extends React.Component {
     }
 }
 
-
-UpcomingScheduleChanges.propTypes = {
-    data: PropTypes.shape({
-        allMarkdownRemark: PropTypes.shape({
-            edges: PropTypes.array
-        })
-    })
-}
-
 export default () => (
     <StaticQuery
         query={graphql`
-            {
-                cancellations {
-                    date
+        query ScheduleChanges {
+            allMarkdownRemark {
+            edges {
+              node {
+                  frontmatter {
+                  cancellation {
+                    date(formatString: "MMMM DD")
                     location
                     type
+                  }
                 }
+              }
             }
+          }
+        }
         `}
-        render={(data) => <UpcomingScheduleChanges cancellations={data} />}
+        render={(data) => <UpcomingScheduleChanges cancellations={data.allMarkdownRemark.edges[0].node.frontmatter.cancellation} />}
     />
 );

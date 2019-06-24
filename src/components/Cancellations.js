@@ -1,8 +1,16 @@
 import React from 'react';
+import Cancellation from './Cancellation';
 
 class Cancellations extends React.Component {
     render() {
-        <p>{this.props.cancellations}</p>
+        console.log(this.props.cancellations)
+        return (
+            <div>
+                {this.props.cancellations.map(cancellation => (
+                    <Cancellation cancellation={cancellation}></Cancellation>
+                ))}
+            </div>
+        )
     }
 }
 

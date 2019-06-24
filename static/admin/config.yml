@@ -20,5 +20,6 @@ collections:
           widget: "list"
           fields:
             - {label: "Date", name: "date", widget: "date"}
-            - {label: "Location", name: "location", widget: "select", options: ["Nolensville", "Franklin", "Brentwood"]}
+            - {label: "Day", name: "day", widget: "select", options: ["Thursday", "Friday", "Sunday"]}
+            - {label: "Location", name: "location", widget: "select", options: ["Nolensville Rec Center", "Academy Park", "Indoor Sports Complex"]}
             - {label: "Type", name: "type", widget: "select", options: ["Cancelled", "Delayed", "Relocated"]}
