@@ -32,6 +32,7 @@ export default () => (
                   frontmatter {
                   cancellation {
                     date(formatString: "MMMM DD")
+                    day
                     location
                     type
                   }
