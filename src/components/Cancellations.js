@@ -3,11 +3,10 @@ import Cancellation from './Cancellation';
 
 class Cancellations extends React.Component {
     render() {
-        console.log(this.props.cancellations)
         return (
             <div>
                 {this.props.cancellations.map(cancellation => (
-                    <Cancellation key={cancellation.date} cancellation={cancellation}></Cancellation>
+                    <Cancellation key={cancellation.date} cancellation={cancellation}></Cancellation> 
                 ))}
             </div>
         )
