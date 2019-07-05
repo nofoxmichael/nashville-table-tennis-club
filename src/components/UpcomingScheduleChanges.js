@@ -14,7 +14,7 @@ class UpcomingScheduleChanges extends React.Component {
                 {this.props.cancellations ? (
                     <Cancellations cancellations={this.props.cancellations}></Cancellations>
                 ) : (
-                    <p>Sunday June, 23rd at Indoor Sports Complex is <span className="cancelled">CANCELLED!</span></p>
+                    <p>Thursday July, 4th at Academy Park is <span className="cancelled">CANCELLED!</span></p>
                 )}
             </div>
         )
