@@ -19,6 +19,22 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
+    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static/content`,
+        name: 'content'
+      }
+    },
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "cancellations",
+        fieldName: "cancellations",
+        url: `${__dirname}/static/content/cancellations.md`
+      }
+    },
     'gatsby-plugin-offline',
     'gatsby-plugin-netlify-cms'
   ],

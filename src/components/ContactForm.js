@@ -5,7 +5,7 @@ import Contact from './Contact';
 class ConactForm extends React.Component {
     render() {
         return (
-            <section id="five" class="main style1 special">
+            <section id="five" className="main style1 special">
                 <div className="container">
                     <header className="major">
                         <h2>Contact Us</h2>
