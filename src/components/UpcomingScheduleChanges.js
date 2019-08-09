@@ -5,7 +5,7 @@ import Cancellations from './Cancellations';
 
 class UpcomingScheduleChanges extends React.Component {
     render() {
-        console.log(this.props.cancellations)
+        console.log("cancellations: " + this.props.cancellations)
         return (
             <div className="col-6">
                 <header className="major">
@@ -28,8 +28,8 @@ export default () => (
             allMarkdownRemark {
             edges {
               node {
-                  frontmatter {
-                  cancellation {
+                frontmatter {
+                  cancellations {
                     date(formatString: "MMMM DD")
                     day
                     location
@@ -41,6 +41,6 @@ export default () => (
           }
         }
         `}
-        render={(data) => <UpcomingScheduleChanges cancellations={data.allMarkdownRemark.edges[0].node.frontmatter.cancellation} />}
+        render={(data) => <UpcomingScheduleChanges cancellations={data.allMarkdownRemark.edges[0].node.frontmatter.cancellations} />}
     />
 );
