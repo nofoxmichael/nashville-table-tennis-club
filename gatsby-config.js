@@ -19,12 +19,11 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-transformer-remark',
+    'gatsby-transformer-yaml',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/static/content`,
-        name: 'content'
+        path: './src/data/cancellations'
       }
     },
     'gatsby-plugin-offline',
