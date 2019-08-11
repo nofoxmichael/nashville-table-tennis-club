@@ -6,8 +6,9 @@ class Cancellation extends React.Component {
     }
 
     render () {
+        console.log(this.props);
         return (
-            <p>{this.props.cancellation.day} {this.props.cancellation.date} at {this.props.cancellation.location} is <span className="cancelled">{this.capitalizeFully(this.props.cancellation.type)}!</span></p>
+            <p>{this.props.cancellation.node.day} {this.props.cancellation.node.date} at {this.props.cancellation.node.location} is <span className="cancelled">{this.capitalizeFully(this.props.cancellation.node.type)}!</span></p>
         )
     }
 }

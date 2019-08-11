@@ -5,42 +5,38 @@ import Cancellations from './Cancellations';
 
 class UpcomingScheduleChanges extends React.Component {
     render() {
-        console.log("cancellations: " + this.props.cancellations)
-        return (
-            <div className="col-6">
-                <header className="major">
-                    <h2>Upcoming Schedule Changes</h2>
-                </header>
-                {this.props.cancellations ? (
-                    <Cancellations cancellations={this.props.cancellations}></Cancellations>
-                ) : (
-                    <p>There are no upcomimng schedule changes!</p>
-                )}
-            </div>
-        )
+      this.props.cancellations.shift()
+      return (
+          <div className="col-6">
+              <header className="major">
+                  <h2>Upcoming Schedule Changes</h2>
+              </header>
+              {this.props.cancellations.length > 0 ? (
+                  <Cancellations cancellations={this.props.cancellations}></Cancellations>
+              ) : (
+                  <p>There are no upcomimng schedule changes!</p>
+              )}
+          </div>
+      )
     }
 }
 
 export default () => (
     <StaticQuery
         query={graphql`
-        query ScheduleChanges {
-            allMarkdownRemark {
-            edges {
-              node {
-                frontmatter {
-                  cancellations {
-                    date(formatString: "MMMM DD")
-                    day
-                    location
-                    type
-                  }
+          query ScheduleChanges {
+            allCancellationsYaml {
+              edges {
+                node {
+                  date(formatString: "MMMM DD")
+                  day
+                  location
+                  type
                 }
               }
             }
           }
-        }
         `}
-        render={(data) => <UpcomingScheduleChanges cancellations={data.allMarkdownRemark.edges[0].node.frontmatter.cancellations} />}
+        render={(data) => <UpcomingScheduleChanges cancellations={data.allCancellationsYaml.edges} />}
     />
 );

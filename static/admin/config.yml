@@ -9,9 +9,11 @@ public_folder: "/images"
 collections:
   - label: "Cancellations"
     name: "cancellations"
-    file: "static/content/cancellations.md"
+    folder: "src/data/cancellations"
+    file: "src/data/cancellations/cancellations.yml"
     create: true
     widget: "list"
+    identifier_field: date
     fields:
       - {label: "Date", name: "date", widget: "date"}
       - {label: "Day", name: "day", widget: "select", options: ["Thursday", "Friday", "Sunday"]}
