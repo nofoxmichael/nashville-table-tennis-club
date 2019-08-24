@@ -3,3 +3,18 @@
   day: None
   location: None
   type: None
+- cancellation:
+  date: 2019-09-20T00:00:00.000Z
+  day: Friday
+  location: Nolensville Recreation Center
+  type: Delayed
+- cancellation:
+  date: 2019-10-18T00:00:00.000Z
+  day: Friday
+  location: Nolensville Recreation Center
+  type: Delayed
+- cancellation:
+  date: 2019-11-15T00:00:00.000Z
+  day: Friday
+  location: Nolensville Recreation Center
+  type: Delayed
