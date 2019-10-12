@@ -1,34 +1,4 @@
 - cancellation:
-  date: 0001-01-01T00:00:00.000Z
-  day: None
-  location: None
-  type: None
-- cancellation:
-  date: 2019-09-01T00:00:00.000Z
-  day: Sunday
-  location: Indoor Sports Complex
-  type: Cancelled
-- cancellation:
-  date: 2019-09-15T00:00:00.000Z
-  day: Sunday
-  location: Indoor Sports Complex
-  type: Cancelled
-- cancellation:
-  date: 2019-09-19T00:00:00.000Z
-  day: Thursday
-  location: Academy Park
-  type: Cancelled
-- cancellation:
-  date: 2019-09-20T00:00:00.000Z
-  day: Friday
-  location: Nolensville Recreation Center
-  type: Delayed
-- cancellation:
-  date: 2019-09-26T00:00:00.000Z
-  day: Thursday
-  location: Academy Park
-  type: Cancelled
-- cancellation:
   date: 2019-10-18T00:00:00.000Z
   day: Friday
   location: Nolensville Recreation Center
