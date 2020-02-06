@@ -23,3 +23,13 @@
   day: Friday
   location: Nolensville Recreation Center
   type: Cancelled
+- cancellation:
+  date: 2010-03-27T00:00:00.000Z
+  day: Friday
+  location: Nolensville Recreation Center
+  type: Delayed
+- cancellation:
+  date: 2010-04-17T00:00:00.000Z
+  day: Friday
+  location: Nolensville Recreation Center
+  type: Delayed
