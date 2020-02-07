@@ -16,11 +16,6 @@ class Anncouncements extends React.Component {
                 <ul className="actions uniform">
                     <li><a href="http://www.tnseniorolympics.com/table-tennis" target="_blank" rel="noopener noreferrer" className="button special">More Info</a></li>
                 </ul>
-
-                <p> Some other random announcements that have a more info button and a lot of text</p>
-                <ul className="actions uniform">
-                    <li><a href="http://www.tnseniorolympics.com/table-tennis" target="_blank" rel="noopener noreferrer" className="button special">More Info</a></li>
-                </ul>
             </section>
         )
     }
