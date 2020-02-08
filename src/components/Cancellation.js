@@ -6,9 +6,19 @@ class Cancellation extends React.Component {
     }
 
     render () {
-        console.log(this.props);
+        console.log("Start Time: %s", this.props.cancellation.node.startTime)
         return (
-            <p>{this.props.cancellation.node.day} {this.props.cancellation.node.date} at {this.props.cancellation.node.location} is <span className="cancelled">{this.capitalizeFully(this.props.cancellation.node.type)}!</span></p>
+            <div id="cancellation-wrapper">
+                <p>
+                    {this.props.cancellation.node.day} 
+                    {this.props.cancellation.node.date} 
+                    at {this.props.cancellation.node.location} is <span className="cancelled">{this.capitalizeFully(this.props.cancellation.node.type)}!</span>
+                </p>
+
+                {this.props.cancellation.node.type === "Delayed" ? (
+                    <p className="start-time">Play will begin at {this.props.cancellation.node.startTime}</p>
+                ) : (null)}
+            </div>
         )
     }
 }
