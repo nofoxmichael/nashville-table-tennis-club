@@ -6,7 +6,6 @@ class Cancellation extends React.Component {
     }
 
     render () {
-        console.log("Start Time: %s", this.props.cancellation.node.startTime)
         return (
             <div id="cancellation-wrapper">
                 <p>
