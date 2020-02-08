@@ -32,6 +32,7 @@ export default () => (
                   day
                   location
                   type
+                  startTime
                 }
               }
             }

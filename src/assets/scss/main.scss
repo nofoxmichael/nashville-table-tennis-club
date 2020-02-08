@@ -52,6 +52,14 @@
 		font-weight: bold;
 		color: #B52F27;
 	}
+
+	.start-time {
+		margin-bottom: 20px;
+		margin-top: -25px;
+		margin-left: 40px;
+		font-size: 0.85em;
+		text-align: left;
+	}
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1025px) {
@@ -78,6 +86,14 @@
 		font-weight: bold;
 		color: #B52F27;
 	}
+
+	.start-time {
+		margin-bottom: 20px;
+		margin-top: -25px;
+		margin-left: 40px;
+		font-size: 0.85em;
+		text-align: left;
+	}
 }
 
 @media screen and (max-width: 1023px) {
@@ -103,6 +119,13 @@
 		display: block;
 		font-weight: bold;
 		color: #B52F27;
+	}
+
+	.start-time {
+		margin-bottom: 20px;
+		margin-top: -25px;
+		font-size: 0.85em;
+		text-align: center;
 	}
 }
 
@@ -251,6 +274,10 @@
 	}
 
 	.style1 > header > h2 {
+		color: white;
+	}
+
+	h4.announcement-header {
 		color: white;
 	}
 

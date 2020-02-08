@@ -1,0 +1,10 @@
+- announcement:
+  id: a0-dmy-data
+  title: Dummy Announcement
+  description: Do not delete
+  link: http://www.dontdeletethis.com/dontremove
+- announcement:
+  id: a1-tn-snr-oly
+  title: Tennessee Senior Olympics State Finals
+  description: TN Senior Olympics State Finals are from June 19-25, 2020! Online registration will open near the beginning of March. Click the button for more information.
+  link: http://www.tnseniorolympics.com/table-tennis

@@ -23,7 +23,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: './src/data/cancellations'
+        path: './src/data/'
       }
     },
     'gatsby-plugin-offline',

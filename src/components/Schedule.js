@@ -2,6 +2,7 @@ import React from 'react';
 
 import Location from './Location';
 import UpcomingScheduleChanges from './UpcomingScheduleChanges';
+import Announcements from "../components/Announcements";
 
 class Schedule extends React.Component {
     render() {
@@ -18,6 +19,7 @@ class Schedule extends React.Component {
                     </div>
                     <UpcomingScheduleChanges></UpcomingScheduleChanges>
                 </div>
+                <Announcements></Announcements>
             </section>
         );
     }
