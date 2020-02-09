@@ -13,7 +13,10 @@ class Welcome extends React.Component {
                             <h2>Welcome to NTTC!</h2>
                         </header>
                         <p>
-                            {this.props.welcomeText}
+                            {this.props.welcome.welcomeText.welcomeText}
+                        </p>
+                        <p>
+                            {this.props.welcome.welcomeClosing}
                         </p>
                     </div>
                     <div className="col-6">
@@ -25,21 +28,22 @@ class Welcome extends React.Component {
     }
 }
 
-export default () => {
+export default () => (
     <StaticQuery
         query={graphql`
-          query MyQuery {
+          query Welcome {
             allContentfulWelcome {
-              edges {
-                node {
-                  welcomeText {
-                    welcomeText
+                edges {
+                  node {
+                    welcomeText {
+                      welcomeText
+                    }
+                    welcomeClosing
                   }
                 }
               }
-            }
           }
         `}
-        render={(data) => <Welcome welcomeText={data.allContentfulWelcome.edges.node.welcomeText.welcomeText} />}
+        render={(data) => <Welcome welcome={data.allContentfulWelcome.edges[0].node} />}
     />
-};
+);
