@@ -5,7 +5,6 @@ import Cancellations from './Cancellations';
 
 class UpcomingScheduleChanges extends React.Component {
     render() {
-      this.props.cancellations.shift()
       return (
           <div className="col-6">
               <header className="major">
@@ -25,11 +24,11 @@ export default () => (
     <StaticQuery
         query={graphql`
           query ScheduleChanges {
-            allCancellationsYaml {
+            allContentfulCancellations(sort: {fields: date}) {
               edges {
                 node {
-                  date(formatString: "MMMM DD")
-                  day
+                  id
+                  date(formatString: "dddd MMMM DD, YYYY")
                   location
                   type
                   startTime
@@ -38,6 +37,6 @@ export default () => (
             }
           }
         `}
-        render={(data) => <UpcomingScheduleChanges cancellations={data.allCancellationsYaml.edges} />}
+        render={(data) => <UpcomingScheduleChanges cancellations={data.allContentfulCancellations.edges} />}
     />
 );

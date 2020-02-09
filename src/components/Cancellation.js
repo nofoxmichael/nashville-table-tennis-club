@@ -9,9 +9,7 @@ class Cancellation extends React.Component {
         return (
             <div id="cancellation-wrapper">
                 <p>
-                    {this.props.cancellation.node.day} 
-                    {this.props.cancellation.node.date} 
-                    at {this.props.cancellation.node.location} is <span className="cancelled">{this.capitalizeFully(this.props.cancellation.node.type)}!</span>
+                    {this.props.cancellation.node.date} at {this.props.cancellation.node.location} is <span className="cancelled">{this.capitalizeFully(this.props.cancellation.node.type)}!</span>
                 </p>
 
                 {this.props.cancellation.node.type === "Delayed" ? (

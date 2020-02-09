@@ -10,7 +10,7 @@ class Announcement extends React.Component {
                 <div className="col-12">
                     <p>{this.props.announcement.node.description}</p>
                 </div>
-                {this.props.announcement.node.link ? (
+                {this.props.announcement.node.link !== "null" ? (
                     <div className="col-12">
                         <ul className="actions uniform">
                             <li><a href={this.props.announcement.node.link} target="_blank" rel="noopener noreferrer" className="button special">More Info</a></li>

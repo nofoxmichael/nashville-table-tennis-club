@@ -6,7 +6,6 @@ import Anncouncement from './Announcement';
 class Anncouncements extends React.Component {
 
     render() {
-        this.props.announcements.shift()
         if (this.props.announcements.length > 0) {
             return (
                 <section id="two" className="main style2 special">
@@ -34,7 +33,7 @@ export default () => (
     <StaticQuery
         query={graphql`
           query Announcements {
-            allAnnouncementsYaml {
+            allContentfulAnnouncements(sort: {fields: createdAt}) {
               edges {
                 node {
                   id
@@ -46,6 +45,6 @@ export default () => (
             }
           }
         `}
-        render={(data) => <Anncouncements announcements={data.allAnnouncementsYaml.edges} />}
+        render={(data) => <Anncouncements announcements={data.allContentfulAnnouncements.edges} />}
     />
 );

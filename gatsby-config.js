@@ -26,6 +26,13 @@ module.exports = {
         path: './src/data/'
       }
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `x7cpzmb2w4w3`,
+        accessToken: `CGMxGpOq2tSmM83-yld-5GyjsPNbL1a96c_4Aw9HWEg`
+      }
+    },
     'gatsby-plugin-offline',
     'gatsby-plugin-netlify-cms'
   ],
